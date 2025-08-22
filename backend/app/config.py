@@ -4,7 +4,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 WEATHER_API_KEY = os.getenv("WEATHER_API_KEY")
-BASE_URL = os.getenv("WEATHER_API_BASE_URL")
+BASE_URL = os.getenv("WEATHER_API_BASE_URL", "http://api.weatherapi.com/v1")
 
 if not WEATHER_API_KEY:
     raise ValueError("Missing environment variable: WEATHER_API_KEY")
