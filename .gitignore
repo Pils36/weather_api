@@ -17,8 +17,9 @@ ENV/
 # Environment variables
 backend/.env
 frontend/.env
-*.env
 */.env
+*/.env
+
 
 # Logs
 *.log
