@@ -28,7 +28,7 @@ jobs:
 
       - name: Install dependencies
         run: |
-          pip install --upgrade pip -r requirements.txt
+          pip install --upgrade pip -r ./backend/requirements.txt
 
       - name: Run pytest
         run: pytest --maxfail=1 --disable-warnings -q
